@@ -1,5 +1,4 @@
-// config variables
-var apiKey = '103355941355539';
+// create superheroes array
 var superheroes = [
     { id: "1", name: "A-Bomb" },
     { id: "2", name: "Abe Sapien" },
@@ -874,12 +873,16 @@ function handleResetClick() {
 // API FUNCTIONS
 // -------------
 function getSuperheroData(targetElement, characterId) {
-    // configure request url: 'https://superheroapi.com/api/access-token/character-id'
-    var url = 'https://superheroapi.com/api/' + apiKey + '/' + characterId;
+    // configure request url
+    var url = 'https://fantasy-fighter.herokuapp.com/' + characterId;
 
     // send get request to server
     $.get(url, function (characterData) {
-        setSuperHeroContent(targetElement, characterData);
+        // parse response
+        var parsedCharacterData = JSON.parse(characterData);
+
+        // set super hero content
+        setSuperHeroContent(targetElement, parsedCharacterData);
     });
 }
 
