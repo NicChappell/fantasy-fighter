@@ -1,2 +1,2 @@
 # Fantasy Fighter
-Select your fantasy characters and battle it out!
+Select your fantasy characters and fight!

@@ -1,0 +1,71 @@
+#player-one, #player-two {
+    align-items: center;
+    background-color: #eeeeee;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 600px;
+    justify-content: center;
+}
+
+#fight-button {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 1200px) {
+    #fight-button {
+        height: 600px;
+        margin-top: 100px;
+    }
+}
+
+.buttons button {
+    margin: 20px 0;
+}
+
+.card-panel {
+    height: 80%;
+    overflow: scroll;
+    width: 80%;
+}
+
+.character-name {
+    font-weight: bold;
+    text-align: center;
+}
+
+.character-image-container {
+    align-items: center;
+    background-color: #eeeeee;
+    display: flex;
+    height: 96px;
+    justify-content: flex-start;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 72px;
+}
+
+.character-image {
+    height: auto;
+    width: 100%;
+}
+
+.character-powerstats td:last-child {
+    font-weight: bold;
+}
+
+.player-one-wins, .player-two-wins, .ties {
+    color: black;
+    font-size: 48px;
+}
+
+.winning {
+    color: green;
+}
+
+.losing {
+    color: orangered;
+}
